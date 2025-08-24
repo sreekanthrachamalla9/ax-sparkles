@@ -1,16 +1,15 @@
-<!-- Show header + sidebar only if NOT login/signup -->
 <ng-container *ngIf="!isAuthPage()">
-  <app-header></app-header>
+<app-header></app-header>
 
-  <div class="d-flex">
-    <app-side-navbar></app-side-navbar>
-    <div class="flex-grow-1 p-3">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+<div class="d-flex">
+<app-side-navbar></app-side-navbar>
+<div class="main-content">
+<router-outlet></router-outlet>
+</div>
+</div>
 </ng-container>
 
 <!-- If login/signup, just render router-outlet -->
 <ng-container *ngIf="isAuthPage()">
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 </ng-container>

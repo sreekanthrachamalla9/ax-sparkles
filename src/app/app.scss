@@ -1,0 +1,16 @@
+// Main layout styles
+.main-content {
+  margin: auto; // Account for fixed sidebar width
+  margin-top: 50px;   // Account for fixed header height
+  padding: 10px;
+  min-height: calc(100vh - 50px); // Full height minus header
+  background: #f8f9fa;
+}
+
+// Ensure proper layout on smaller screens
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
