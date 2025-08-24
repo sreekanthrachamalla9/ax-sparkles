@@ -1,0 +1,31 @@
+.header-bar {
+  height: 50px;
+  background: #d3d3d3;
+  border: 1px solid #0099ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  position: fixed;
+  top: 0;
+  left: 220px;
+  width: calc(100% - 220px);
+  z-index: 1000;
+}
+
+.welcome-text {
+  font-size: 14px;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 14px;
+  cursor: pointer;
+}

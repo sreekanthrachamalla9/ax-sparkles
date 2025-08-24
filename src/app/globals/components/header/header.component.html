@@ -1,0 +1,13 @@
+<div class="header-bar">
+<!-- Welcome -->
+<span class="welcome-text">Welcome {{ candidateName }}</span>
+
+<!-- Profile Button + Menu -->
+<div class="profile-section">
+<button (click)="toggleMenu()" class="profile-btn">
+Profile
+</button>
+<app-profile-menu *ngIf="isMenuOpen"></app-profile-menu>
+</div>
+</div>
+
