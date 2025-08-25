@@ -1,0 +1,24 @@
+<div class="job-card" [class.highlighted]="job.status === 'Shortlisted' || job.status === 'Interview'">
+  <!-- Job Details -->
+  <div class="job-details">
+    <p class="job-title">
+      {{ job.title }}
+    </p>
+    <p class="job-info">Time stamp: {{ job.timestamp }}</p>
+    <p class="job-info">Job-ID: {{ job.jobId }}</p>
+    
+    <p class="job-info company-info">Company details: {{ job.company }}</p>
+    <p class="job-info">Location: {{ job.location }}</p>
+    <p class="job-info status-info" [style.color]="getStatusColor(job.status)">
+      Status: {{ job.status }}
+    </p>
+    <p class="job-info">
+      Applied on: {{ formatDate(job.appliedOn) }}
+    </p>
+  </div>
+
+  <!-- Action -->
+  <button (click)="onView()" class="view-button">
+    View Job
+  </button>
+</div>

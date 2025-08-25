@@ -1,0 +1,27 @@
+.jobs-applied-container {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 24px 0;
+  color: #222;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .jobs-applied-container {
+    margin: 20px auto 0 auto;
+    padding: 16px;
+  }
+  
+  .page-title {
+    font-size: 16px;
+    margin: 12px 0;
+  }
+}

@@ -1,0 +1,12 @@
+<div style="max-width:1000px;margin:60px auto 0 auto;padding:20px;font-family:Arial, sans-serif;">
+  <h3 style="font-size:18px;font-weight:600;margin:16px 0;color:#444;">
+    Jobs You've Applied
+  </h3>
+
+  @for (job of jobs; track job.jobId) {
+    <app-job-card 
+      [job]="job" 
+      (view)="viewJob($event)">
+    </app-job-card>
+  }
+</div>
