@@ -1,0 +1,32 @@
+<div style="display:flex; justify-content:center; align-items:center; margin-top:40px; margin: 2.5rem;">
+  <div style="width:67rem; background:#e0e0e0; border-radius:20px; padding:2 rem; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align:center; margin-bottom:25px; font-size:22px;">Contact Us</h2>
+    
+    <form (ngSubmit)="submitForm()">
+      
+      <div style="margin-bottom:18px;">
+        <label for="fullName" style="display:block; margin-bottom:6px;margin-left: 2rem; font-weight:500;">Full Name</label>
+        <input type="text" id="fullName" name="fullName" [(ngModel)]="contactForm.fullName"
+               style="width:90%; padding:10px; border:1px solid #ccc; border-radius:6px;margin-left: 2rem; font-size:14px;" required>
+      </div>
+
+      <div style="margin-bottom:18px;">
+        <label for="mail" style="display:block; margin-bottom:6px; margin-left: 2rem; font-weight:500;">Mail</label>
+        <input type="email" id="mail" name="mail" [(ngModel)]="contactForm.mail"
+               style="width:90%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-left: 2rem; font-size:14px;" required>
+      </div>
+
+      <div style="margin-bottom:18px;">
+        <label for="description" style="display:block; margin-bottom:6px; margin-left: 2rem; font-weight:500;">Description</label>
+        <textarea id="description" name="description" [(ngModel)]="contactForm.description"
+                  style="width:90%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-left: 2rem; font-size:14px; height:100px; resize:none;" required></textarea>
+      </div>
+
+      <button type="submit"
+              style="width:90%; padding:12px; background:#fff; border:1px solid #aaa; border-radius:6px; margin-left: 2rem; cursor:pointer; font-size:16px; font-weight:600;">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
