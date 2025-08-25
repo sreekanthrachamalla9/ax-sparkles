@@ -1,0 +1,8 @@
+<div class="job-grid">
+  <app-card 
+    *ngFor="let job of jobs"
+    [job]="job"
+    (apply)="onJobApply($event)">
+  </app-card>
+</div>
+
